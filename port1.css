@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 header {
     position: fixed;
@@ -304,67 +307,90 @@ h1 {
 .left .progressbar, .right .progressbar {
     width: 100%;
     height: 12px;
-    background-color: lightgrey;
+    padding: 5px;
+    /* background-color: #212431cc; */
     margin-bottom: 10px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: inset 0 1px 2px #212431, 0 1px#212431;
 }
+.progressbar span{
+    color:#212431cc;
+    position: relative;
+    float: right;
+    right: 3px;
+    top:-13px;
+    font-size: 12px;
+}
+.skills h3{
+    text-transform: uppercase;
+}
+
 
 .progressbar .html {
     width: 90%;
     height: 100%;
     background-color: blue;
-    animation: color1 8s;
+    border-radius: 5px;
+
+    animation: color1 8s  infinite;
 }
 
 .progressbar .css {
-    width: 70%;
+    width: 85%;
     height: 100%;
     background: #f9bf3f;
-    animation: color2 8s;
+    border-radius: 5px;
+
+    animation: color2 8s infinite ;
 }
 
 .progressbar .javascript {
-    width: 80%;
+    width: 75%;
     height: 100%;
     background: #a84cb8;
-    animation: color3 8s;
+    border-radius: 5px;
+
+    animation: color3 8s infinite;
 }
 
 .progressbar .photoshop {
     width: 70%;
     height: 100%;
     background: #ec5453;
-    animation: color4 8s;
+    border-radius: 5px;
+
+    animation: color4 8s infinite;
 }
 
-.progressbar .php {
+.progressbar .bootstrap {
     width: 80%;
     height: 100%;
     background: #2fa499;
-    animation: color5 8s;
+    border-radius: 5px;
+
+    animation: color5 8s infinite;
 }
 
 .progressbar .c {
     width: 60%;
     height: 100%;
     background-color: #4a89dc;
-    animation: color6 8s;
+    border-radius: 5px;
+
+    animation: color6 8s infinite;
 }
 
 @keyframes color1 {
-    0% {
+from {
         width: 0%;
     }
-    100% {
-        width: 75%;
+    to {
+        width: 90%;
     }
 }
 
-.progressbar span {
-    margin-left: 101%;
-    color: white;
-}
+
 
 @keyframes color2 {
     0% {
@@ -380,7 +406,7 @@ h1 {
         width: 0%;
     }
     100% {
-        width: 85%;
+        width: 75%;
     }
 }
 
@@ -389,7 +415,7 @@ h1 {
         width: 0%;
     }
     100% {
-        width: 75%;
+        width: 70%;
     }
 }
 
@@ -398,7 +424,7 @@ h1 {
         width: 0%;
     }
     100% {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -666,7 +692,15 @@ span {
   .seventeen .portfolio-bg{
     background-image: url('images/basic80.png');  
   }
-
+  .eighteen .portfolio-bg{
+    background-image: url('images/bcard1.png');  
+  }
+  .ninteen .portfolio-bg{
+    background-image: url('images/bcard2.png');  
+  }
+  .twenty .portfolio-bg{
+    background-image: url('images/bcard3.png');  
+  }
   .portfolio .label {
     position: absolute;
     width: 100%;
@@ -897,19 +931,27 @@ footer h3{
         box-sizing: border-box;
 
     }
+  
     .left .input{
         display: block;
         margin-bottom: 0;
+        padding: 5px;
+        box-sizing: border-box;
+
     }
     .input .txtbox {
         width: 100%;
         float: left;
         margin-bottom: 30px;
+        padding: 5px;
         box-sizing: border-box;
 
     }
     .left .msgbox {
         margin-top: 0px;
+        padding: 5px;
+        box-sizing: border-box;
+
      }
 
     .btn2 {
